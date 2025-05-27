@@ -109,7 +109,7 @@ const PaymentPage: React.FC = () => {
   const validateForm = (): boolean => {
     const newErrors: {[key: string]: string} = {};
 
-    if (!formData.cardNumber || formData.cardNumber.replace(/\s/g, '').length < 13) {
+    if (!formData.cardNumber || formData.cardNumber.replace(/\s/g, '').length < 16) {
       newErrors.cardNumber = 'Número de tarjeta inválido';
     }
 
